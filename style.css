@@ -8,6 +8,25 @@ html,body{
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background: var(--Soft-Blue); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 7px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
 
 :root{
     --Soft-Blue: hsl(231, 69%, 60%);
@@ -37,7 +56,7 @@ html,body{
     font-size: 15px;
 }
 .navlinks a:hover{
-    color: rgb(10, 44, 197);
+    color: rgb(223, 70, 9);
    
 }
 
@@ -51,9 +70,9 @@ html,body{
    
 }
 .topbut a:hover{
-    color: var(--Soft-Blue);
+    color: var(--Soft-Red);
     background-color: transparent;
-    border: 1px solid blue;
+    border: 1px solid rgb(223, 70, 9);
 
    
     
@@ -314,9 +333,9 @@ html,body{
     padding: 10px 20px;
 }
 .enter a:hover{
-    color: rgb(10, 24, 83);
+    color: var(--Soft-Red);
     background-color: transparent;
-    border: 1px solid rgb(2, 2, 31);
+    border: 1px solid var(--Soft-Red);
 
 }
 
@@ -331,11 +350,11 @@ html,body{
     gap: 40px;
 }
 .about a{
-    color: rgb(5, 2, 56);
+    color: rgb(3, 3, 48);
     text-decoration: none;
 }
 .about a:hover{
-    color: rgb(10, 44, 197);
+    color: var(--Soft-Red);
 }
 
 .icon{
@@ -347,6 +366,17 @@ html,body{
     color: white;
     text-decoration: none;
 }
+.icon a:hover{
+    color: var(--Soft-Red);
+}
+.navtoogle{
+    display: none;
+}
+.navlinks div{
+    display: none;
+}
+
+
 @media screen and (max-width:992px){
     #nav{
        padding-right: 120px;
@@ -359,7 +389,7 @@ html,body{
     }
     #manager{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         padding: 40px 70px 10px;
         margin-right: auto;
         margin-left: auto;
@@ -402,9 +432,7 @@ html,body{
     
 }
 @media  screen and (max-width:768px){
- #nav img{
-    width: 20%;
- }
+ 
  #nav{
     padding: 20px 30px;
  }
@@ -482,9 +510,79 @@ html,body{
     gap: 7px;
     font-size: 15px;
  }
+}
 
+@media screen and (max-width:700px){
+    .navtoogle{
+        display: block;
+        width: 20%;
+        color: black;
+    }
+
+    .navlinks a:nth-of-type(1) {
+        border-top: 1px solid rgba(255, 255, 255, 0.267);
+    }
+    .close{
+        display: none;
+       
+    }
+    .topbut{
+        display: none;
+    }
+    .navlinks a{
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--white);
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.267); 
+    border-radius: 0;
+    width: 70%;
+    /* margin-bottom: 30px */
+    }
+    .navlinks div {
+        padding: 0 16px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+    .navic a{
+        border: none;
+        
+    }
+    .navic a:nth-of-type(1){
+        border: none;
+    }
+    .navic{
+        position: absolute;
+        bottom: 0;
+    }
+    
+    .navlinks{
+        position: fixed;
+        left: 50%;
+        top: -70%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        width: 100vw;
+        height: 100vh;
+        padding: 30px 0;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        background: var(--Grayish-Blue);
+        box-shadow: 10px 10px 20px rgb(89, 90, 90),
+                    -10px -10px 20px rgb( 89, 90, 90);
+         transition:  .5s;
+         
+         z-index: 999;
+    }
+}
+@media screen and (max-width:520px){ 
 
 }
+
 @media screen and (max-width:480px){
     .man{
         width: 120%;

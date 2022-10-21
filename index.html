@@ -12,10 +12,24 @@
     <section id="nav">
         <div class="top">
                 <img src="/images/logo-bookmark.svg" alt="">
+                <div class="navtoogle">
+                    <img src="/images/icon-hamburger.svg" alt="" class="open" onclick="openNav()">
+                    
+                </div>
                 <div class="navlinks">
-                    <a href="">Features</a>
-                    <a href="">Pricing</a>
-                    <a href="">contact</a>
+                    <div>
+                        <img src="/images/logo-bookmark.svg" alt="">
+                        <img src="/images/icon-close.svg" alt="" class="close" onclick="closeNav()">
+
+                    </div>
+                    <a href="#Features">Features</a>
+                    <a href="#Jlick">Pricing</a>
+                    <a href="#Joined">contact</a>
+
+                    <div class="navic">
+                        <a href=""><i class="ri-facebook-circle-fill"></i></a>
+                        <a href=""><i class="ri-twitter-fill"></i></a>
+                    </div>
                 </div>
                 <div class="topbut">
                     <a href="">Log in</a>
@@ -150,34 +164,12 @@
             <a href=""><i class="ri-twitter-line"></i></a>
             <a href=""><i class="ri-whatsapp-line"></i></a>
             <a href=""><i class="ri-instagram-line"></i></a>
-
         </div>
-    </section>
 
+    <i class="ri-arrow-up-s-line" onclick="topFunction()" id="myBtn" style="display: block; font-size:28px"></i>
+</section>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
+<script src="/JAVASCRIPT/main.js"></script>
 </body>
 </html>

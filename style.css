@@ -513,11 +513,16 @@ html,body{
 }
 
 @media screen and (max-width:700px){
+    #nav{
+        padding-right: 10px;
+    }
     .navtoogle{
         display: block;
         width: 20%;
         color: black;
+        margin-left: 60%; 
     }
+    
 
     .navlinks a:nth-of-type(1) {
         border-top: 1px solid rgba(255, 255, 255, 0.267);
@@ -579,14 +584,95 @@ html,body{
          z-index: 999;
     }
 }
-@media screen and (max-width:520px){ 
-
+@media screen and (max-width:580px){ 
+    .navtoogle{
+        margin-left: 60%; 
+    }
+    #manager img{
+        width: 100%;
+    }
+    .man{
+        width: 100%;
+    }
+    #features{
+        width: 80%;
+    }
+    #onclick img{
+        width: 100%;
+    }
+    #extention{
+        padding: 20px 30px;
+    }
+    #extention a{
+        padding: 3px;
+    }
+    .box1{
+        width: 90%;
+        line-height: 20px;
+    }
+    .box1 h2{
+        font-size: 12px;
+    }
+    .box1 p{
+        font-size: 11px;
+    }
+    .box2{
+        width: 90%;
+        line-height: 20px;
+    }
+    .box2 h2{
+        font-size: 12px;
+    }
+    .box2 p{
+        font-size: 11px;
+    }
+    .box3{
+        width: 90%;
+        line-height: 20px;
+    }
+    .box3 h2{
+        font-size: 12px;
+    }
+    .box3 p{
+        font-size: 11px;
+    }
+    #faq{
+        width: 90%;
+    }
+    .info{
+        padding-left: 180px;
+    }
+    .up h4{
+        font-size: 15px;
+    }
+    .up h1{
+        font-size: 20px;
+    }
+    #bottom{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 15px;
+        align-items: center;
+        gap: 40px;
+        justify-content: center;
+        text-align: center;}
+    .image{
+        margin-right: 20%;
+    }
+       
+   
+    
+        
 }
 
 @media screen and (max-width:480px){
-    .man{
-        width: 120%;
+    .navtoogle{
+        margin-left: 45%; 
     }
+    #manager img{
+        width: 80%;
+    }
+    
     .text h1{
         padding: 10px 20px;
         font-size: 20px;
@@ -672,5 +758,66 @@ html,body{
         font-size: 20px;
     }
 }
+@media screen and (max-width:375px){
+    .navtoogle{
+        margin-left: 5%; 
+    }
+    .man{
+        width: 130%;
+    }
+    #features{
+        width: 100%;
+    }
+    .text2{
+        line-height: 20px;
+    }
+    #onclick img{
+        width: 200%;
+    }
+    .click{
+        width: 200%;
+    }
+    #faq{
+        width: 100%;
+        padding: 50px 20px;
+    }
+    .faqs{
+        padding: 10px 20px;
+        width: 110%;
+    }
+    .zika{
+        font-size: 10px;
+        padding: 5px 15px;
+        line-height: 20px;
+    }
+    .zika a{
+        font-size: 15px;
+    }
+    .info{
+        font-size: 10px;
+        padding-left: 120px;
+    }
+    .up h4{
+        font-size: 10px;
+    }
+    .up h1{
+        font-size: 13px;
+    }
+    .enter{
+        padding: 5px 20px; 
+        display: flex;
+        flex-direction: column;
+    }
+    .about{
+        font-size: 10px;
+        padding: 0px;
+        padding: 0px;
+
+    }
+    
+
+
+}
+
 
 

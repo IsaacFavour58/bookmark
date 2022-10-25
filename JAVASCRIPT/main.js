@@ -67,3 +67,15 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+// typed effect
+ let typed = new Typed('.typing-effect', {
+    strings: [
+    "WEB DEVELOPER",
+    "GRAPHIC DESIGNER",
+    "WEB DESIGNER",
+    "MANAGER"
+    ],
+    backSpeed: '9',
+    typeSpeed: '9',
+    loop: true
+    });

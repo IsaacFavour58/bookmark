@@ -75,7 +75,7 @@ AOS.init({
     "WEB DESIGNER",
     "MANAGER"
     ],
-    backSpeed: '9',
-    typeSpeed: '9',
+    backSpeed: '10',
+    typeSpeed: '14',
     loop: true
     });
